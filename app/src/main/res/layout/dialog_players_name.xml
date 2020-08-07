@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:paddingBottom="6dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:fontFamily="cursive"
+        android:background="@color/paper_brown_bg_1"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Player Name" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeWidth="2dp"
+        android:layout_margin="8dp"
+        android:hint="@string/player_1">
+        <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/editText_player1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="15dp"
+            android:fontFamily="cursive"
+            android:textColor="@color/paper_brown_bg_1"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawableLeft="@drawable/ic_baseline_person_24" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeWidth="2dp"
+        android:layout_margin="8dp"
+        android:hint="@string/player_2">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_player2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="15dp"
+            android:fontFamily="cursive"
+            android:textColor="@color/paper_brown_bg_1"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawableLeft="@drawable/ic_baseline_person_24"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_startGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="cursive"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@drawable/background_btn"
+        android:text="start"/>
+</LinearLayout>

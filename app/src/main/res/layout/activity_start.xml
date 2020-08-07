@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brown_paper_bg"
+    tools:context=".StartActivity">
+
+
+    <TextView
+        android:id="@+id/tv_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="cursive"
+        android:text="@string/game_name"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2"
+        android:textColor="@color/paper_brown_bg_1"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bt_start"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_appname"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_btn"
+        android:fontFamily="cursive"
+        android:onClick="startGame"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

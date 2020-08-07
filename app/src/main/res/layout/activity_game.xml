@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brown_paper_bg"
+    tools:context=".GameActivity">
+
+
+    <LinearLayout
+        android:id="@+id/LL_showDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_btn"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/TV_player1"
+            android:layout_margin="15dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:fontFamily="cursive"
+            android:gravity="center_vertical|start"
+             />
+
+        <TextView
+            android:id="@+id/winnerLog"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0:0" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/TV_player2"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:fontFamily="cursive"
+            android:textColor="@color/white"
+            android:gravity="center_vertical|end"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TV_showTurn"
+        style="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_btn"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:padding="10dp"
+        android:text="Player 1 Turn "
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/grid"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/TV_showTurn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LL_showDetail">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:onClick="playerTap"
+                android:padding="15dp"
+                android:tag="0"
+                app:srcCompat="@drawable/o" />
+
+            <ImageView
+                android:id="@+id/iv_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:onClick="playerTap"
+                android:padding="15dp"
+                android:tag="1"
+                app:srcCompat="@drawable/o" />
+
+            <ImageView
+                android:id="@+id/iv_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:onClick="playerTap"
+                android:padding="15dp"
+                android:tag="2"
+                app:srcCompat="@drawable/o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:onClick="playerTap"
+                android:padding="15dp"
+                android:tag="3"
+                app:srcCompat="@drawable/o" />
+
+            <ImageView
+                android:id="@+id/iv_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:onClick="playerTap"
+                android:padding="15dp"
+                android:tag="4"
+                app:srcCompat="@drawable/o" />
+
+            <ImageView
+                android:id="@+id/iv_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:onClick="playerTap"
+                android:padding="15dp"
+                android:tag="5"
+                app:srcCompat="@drawable/o" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:onClick="playerTap"
+                android:padding="15dp"
+                android:tag="6"
+                app:srcCompat="@drawable/o" />
+
+            <ImageView
+                android:id="@+id/iv_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:onClick="playerTap"
+                android:padding="15dp"
+                android:tag="7"
+                app:srcCompat="@drawable/o" />
+
+            <ImageView
+                android:id="@+id/iv_9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="TODO"
+                android:onClick="playerTap"
+                android:padding="15dp"
+                android:tag="8"
+                app:srcCompat="@drawable/o" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
